@@ -12,7 +12,7 @@
     <title>change</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/dist/css/bootstrap.min.css" rel="stylesheet">
 
 
   </head>

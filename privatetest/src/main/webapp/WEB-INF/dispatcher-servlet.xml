@@ -23,11 +23,11 @@
 
 	<context:annotation-config />
 
-	<!-- 开启这个配置，spring才能识别@Scheduled注解 -->
+	<!--  
 	<task:annotation-driven scheduler="qbScheduler"
 		mode="proxy" />
 	<task:scheduler id="qbScheduler" pool-size="10" />
-
+	--> 
 	<bean
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 		<property name="prefix" value="/WEB-INF/views/" />
@@ -42,6 +42,8 @@
 		<property name="fileEncoding" value="utf-8" />
 	</bean>
  -->
-
+	<mvc:resources location="/img/" mapping="/img/**"/>   
+ 	<mvc:resources location="/js/" mapping="/js/**"/>    
+	<mvc:resources location="/css/" mapping="/css/**"/> 
 
 </beans>  
