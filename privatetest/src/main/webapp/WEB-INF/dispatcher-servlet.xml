@@ -19,7 +19,7 @@
 	default-lazy-init="false">
 
 	<mvc:annotation-driven />
-	<context:component-scan base-package="com.jyt.mmfastdfsmvc" />
+	<context:component-scan base-package="org.icesure.privatetest" />
 
 	<context:annotation-config />
 
@@ -33,17 +33,20 @@
 		<property name="prefix" value="/WEB-INF/views/" />
 		<property name="suffix" value=".jsp" />
 	</bean>
-<!-- 
+ 
 	<bean id="propertyConfigurer"
 		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
 		<property name="location">
-			<value>/WEB-INF/config.properties</value>
+			<value>/WEB-INF/jdbc.properties</value>
 		</property>
 		<property name="fileEncoding" value="utf-8" />
 	</bean>
- -->
-	<mvc:resources location="/img/" mapping="/img/**"/>   
+
+	<mvc:resources location="/image/" mapping="/image/**"/>   
  	<mvc:resources location="/js/" mapping="/js/**"/>    
 	<mvc:resources location="/css/" mapping="/css/**"/> 
+	<mvc:resources location="/htm/" mapping="/htm/**"/> 
+	
+	
 
 </beans>  

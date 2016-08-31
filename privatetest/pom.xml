@@ -1,29 +1,29 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>org.icesure</groupId>
-  <artifactId>privatecenter</artifactId>
-  <packaging>war</packaging>
-  <version>0.0.1-SNAPSHOT</version>
-  <name>privatecenter Maven Webapp</name>
-  <url>http://maven.apache.org</url>
-  
-  	<properties>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.icesure</groupId>
+	<artifactId>privatecenter</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>privatecenter Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+
+	<properties>
 		<jdk.version>1.7</jdk.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.encoding>UTF-8</maven.compiler.encoding>
 		<springversion>3.1.4.RELEASE</springversion>
 		<junitversion>4.11</junitversion>
 	</properties>
-  
-  <dependencies>
-    <dependency>
+
+	<dependencies>
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>${junitversion}</version>
 			<scope>test</scope>
-	</dependency>
-	<dependency>
+		</dependency>
+		<dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aop</artifactId>
 			<version>${springversion}</version>
@@ -135,20 +135,46 @@
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
-			<dependency>
+		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>jstl</artifactId>
 			<version>1.2</version>
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
-				<dependency>
+		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.6.6</version>
 		</dependency>
-  </dependencies>
-  <build>
-    <finalName>privatecenter</finalName>
-  </build>
+		<dependency>
+			<groupId>org.codehaus.jackson</groupId>
+			<artifactId>jackson-mapper-asl</artifactId>
+			<version>1.9.9</version>
+		</dependency>
+		<dependency>
+			<groupId>commons-fileupload</groupId>
+			<artifactId>commons-fileupload</artifactId>
+			<version>1.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+			<version>1.16.10</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+    		<groupId>com.jolbox</groupId>
+    		<artifactId>bonecp</artifactId>
+   			<version>0.8.0.RELEASE</version>
+		</dependency>
+		<dependency>
+			<groupId>mysql</groupId>
+			<artifactId>mysql-connector-java</artifactId>
+			<version>5.1.21</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<finalName>privatecenter</finalName>
+	</build>
 </project>
