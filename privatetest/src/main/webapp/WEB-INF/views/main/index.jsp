@@ -23,7 +23,6 @@
 
 <!-- Custom styles for this template -->
 <link href="../css/dashboard.css" rel="stylesheet">
-
 <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
 <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
 <script src="../assets/js/ie-emulation-modes-warning.js"></script>
@@ -33,6 +32,8 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    
+<script src="../js/icesure.js"></script>
 </head>
 
 <body>
@@ -92,7 +93,12 @@
 		<script src="../assets/js/ie10-viewport-bug-workaround.js"></script>
 </body>
 <script type="text/javascript">
+function getMyName(){ 
+	var node= <%=session.getAttribute("test")%>;
+	$("#user")[0].innerHTML = node+"欢迎你";
+};
 	$(document).ready(function() {
+		getMyName();
 		$("#image").click(function() {
 			viewinfo("image");
 		});

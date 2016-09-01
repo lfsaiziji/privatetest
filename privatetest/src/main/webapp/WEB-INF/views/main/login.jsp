@@ -53,9 +53,7 @@
           </label> -->
 			</div>
 			<button id="login" class="btn btn-lg btn-primary btn-block"
-				type="submit">登录</button>	
-				<button id="upload" class="btn btn-lg btn-primary btn-block"
-				type="submit">upload</button>		
+				type="submit">登录</button>		
 		</form>
 
 	</div>
@@ -66,11 +64,11 @@
 </body>
 <script>
 $(document).ready(function(){
-
 		$("#login").click(function() {
 			var username = $('#inputUsername').val();
 	    	var password = $('#inputPassword').val();
-	    	window.location.href = "../manage/upload.do";
+	    	window.location.href = "../main/loginin.do?username="+username+"&password="+password;
+	    	return false;
 		});
 });
 
